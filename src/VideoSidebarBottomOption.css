@@ -1,0 +1,23 @@
+.videoSidebarBottomOption {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.videoSidebarBottomOption:hover {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.videoSidebarBottomOption > h1 {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.videoSidebarBottomOption > .MuiSvgIcon-root {
+  font-size: 35px;
+  color: #50bde0;
+}

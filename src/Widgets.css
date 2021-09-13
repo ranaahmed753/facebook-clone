@@ -1,0 +1,30 @@
+.widgets {
+  display: flex;
+  margin-top: 20px;
+  padding: 8px 10px;
+  flex: 0.33;
+  position: relative;
+  z-index: 1;
+}
+
+.widgets > h4 {
+  margin-left: 15px;
+}
+
+.widgets:hover {
+  background-color: lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message__popup {
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+}

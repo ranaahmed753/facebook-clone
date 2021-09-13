@@ -1,0 +1,167 @@
+.marketplace {
+  display: flex;
+}
+
+.marketplace__sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  flex: 0.25;
+  box-shadow: 0px 0px 10px lightgray;
+  height: 100%;
+  top: 50px;
+  position: sticky;
+}
+
+.marketplaceSidebar__top {
+  display: flex;
+  flex-direction: column;
+}
+
+.marketplaceSidebarTop__option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.marketplaceSidebar__bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.marketplaceSidebar__bottom > .marketplaceSidebarBottom__option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.marketplaceSidebar__bottom > .marketplaceSidebarBottom__option:hover {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.marketplaceSidebar__bottom
+  > .marketplaceSidebarBottom__option
+  > .MuiSvgIcon-root {
+  cursor: pointer;
+  color: gray;
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 999px;
+}
+
+.marketplaceSidebar__bottom > .marketplaceSidebarBottom__option > h1 {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.marketplaceSidebar__bottom > button {
+  outline: none;
+  outline-width: 0;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #dbe7f2;
+  color: #458ce9;
+  border-radius: 5px;
+}
+
+.marketplaceSidebar__bottom > button:hover {
+  background-color: #c8ddf1;
+}
+
+.marketplaceSidebarBottom__middle {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.marketplaceSidebarBottom__middle > h1 {
+  font-size: 18px;
+  font-weight: 500px;
+  padding: 5px;
+}
+
+.marketplaceSidebarBottom__middle > p {
+  color: #458ce9;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.marketplaceSidebarBottom__middle > p:hover {
+  color: #458ce9;
+  cursor: pointer;
+  background-color: whitesmoke;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.marketplaceSidebarBottom__bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.marketplaceSidebarBottom__bottom > h1 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.marketplaceSidebarBottombottom__option:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.marketplaceSidebarBottombottom__option {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.marketplaceSidebarBottombottom__option > h1 {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.marketplaceSidebarBottombottom__option > .MuiSvgIcon-root {
+  cursor: pointer;
+  color: gray;
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 999px;
+}
+
+.inputSearch {
+  display: flex;
+  align-items: center;
+  background-color: #f0f2f5;
+  padding: 10px;
+  border-radius: 999px;
+  margin: 10px;
+}
+
+.inputSearch > input {
+  outline: none;
+  border: none;
+  border-width: 0;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+.inputSearch > .MuiSvgIcon-root {
+  color: gray;
+}
+
+.marketplace__feed {
+  flex: 0.75;
+  height: 100%;
+}

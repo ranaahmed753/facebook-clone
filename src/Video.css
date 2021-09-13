@@ -1,0 +1,114 @@
+.video {
+  display: flex;
+}
+
+.video__sidebar {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 10%;
+  box-shadow: 0px 0px 10px lightgray;
+  height: 100%;
+  top: 50px;
+  position: sticky;
+}
+
+.video__sidebar > .videoSidebar__top {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.video__sidebar > .videoSidebar__top > .videoSidebarTop__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.video__sidebar > .videoSidebar__top > .videoSidebarTop__bottom {
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 999px;
+  margin-top: 10px;
+}
+
+.video__sidebar > .videoSidebar__top > .videoSidebarTop__bottom > input {
+  border-width: 0;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+}
+
+.videoSidebar__middle {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid lightgray;
+}
+
+.videoSidebar__middle > .videoSidebarMiddle__option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.videoSidebar__middle > .videoSidebarMiddle__option:hover {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.videoSidebar__middle > .videoSidebarMiddle__option > .MuiSvgIcon-root {
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.videoSidebar__middle > .videoSidebarMiddle__option > h1 {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.videoSidebar__bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.videoSidebar__bottom > .videoSidebarBottom__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.videoSidebar__bottom > .videoSidebarBottom__top > .manage {
+  border-radius: 3px;
+  background-color: white;
+  padding: 8px;
+}
+
+.videoSidebar__bottom > .videoSidebarBottom__top > .manage:hover {
+  border-radius: 3px;
+  background-color: whitesmoke;
+  padding: 8px;
+}
+
+.videoSidebar__bottom > .videoSidebarBottom__option {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.video__right {
+  flex: 0.6;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}

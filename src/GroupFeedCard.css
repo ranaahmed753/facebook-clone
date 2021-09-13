@@ -1,0 +1,87 @@
+.groupFeed__card {
+  background-color: white;
+  border-radius: 10px;
+  height: 500px;
+  width: 500px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.45);
+}
+
+.groupFeedCard__top {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+}
+
+.groupFeedCardTop__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.groupFeedCardTop__option > h1 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.groupFeedCardTopOption__bottom {
+  display: flex;
+  align-items: center;
+}
+
+.groupFeedCardTopOption__bottom > h1 {
+  font-size: 10px;
+  font-weight: 100;
+  margin-left: 6px;
+  margin-right: 6px;
+  color: gray;
+}
+
+.groupFeedCardTopOption__bottom > .MuiSvgIcon-root {
+  color: gray;
+  height: 17px;
+  width: 17px;
+}
+
+.groupFeedCard__middle {
+  margin-top: 10px;
+  width: 100%;
+  height: 300px;
+}
+
+.groupFeedCard__middle > h1 {
+  font-size: 13px;
+  font-weight: 100;
+  color: gray;
+  padding: 10px;
+}
+
+.groupFeedCard__middle > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.groupFeedCard__bottom {
+  margin-top: 15px;
+  display: flex;
+  margin-top: auto;
+  padding: 10px;
+}
+
+.groupFeedCardBottom__option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+}
+
+.groupFeedCardBottom__option:hover {
+  margin: 10px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  cursor: pointer;
+}

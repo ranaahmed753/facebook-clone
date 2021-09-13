@@ -1,0 +1,76 @@
+.marketplace__feed {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  height: 100%;
+}
+
+.marketplaceFeed__top {
+  height: 120px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #458ce9;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.marketplaceFeed__top > button {
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  outline-width: 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  margin-top: auto;
+}
+
+.marketplaceFeed__top > button:hover {
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  outline-width: 0;
+  border: none;
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+
+.marketplaceFeed__middle {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.marketplaceFeed__middle > h1 {
+  font-size: 22px;
+  font-weight: 600px;
+}
+
+.marketplaceFeed__option {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.marketplaceFeed__option > h1 {
+  font-size: 15px;
+  font-weight: 200;
+  color: #458ce9;
+  cursor: pointer;
+}
+
+.marketplaceFeed__option > .MuiSvgIcon-root {
+  color: #458ce9;
+}
+
+.marketplaceFeed__bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.marketplacceFeedBottom__option {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}

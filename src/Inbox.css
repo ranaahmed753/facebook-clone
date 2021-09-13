@@ -1,0 +1,71 @@
+.inbox {
+  height: 450px;
+  width: 350px;
+  background-color: white;
+  box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 40%;
+  left: 75%;
+  right: 0;
+  bottom: 0;
+  padding: 5px;
+  z-index: 2;
+}
+
+.inbox__top {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+
+.inboxTop__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  align-items: flex-start;
+}
+
+.inboxTopOption__right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.inboxTopOption__right > .MuiSvgIcon-root {
+  color: gray;
+}
+
+.inbox__bottom {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.inboxBottom__left {
+  display: flex;
+  align-items: center;
+  flex: 0.2;
+  margin-right: auto;
+}
+
+.inboxBottom__middle {
+  display: flex;
+  align-items: center;
+  background-color: #f0f2f5;
+  border-radius: 999px;
+  padding: 10px;
+  width: 90px;
+  flex: 1;
+}
+
+.inboxBottom__middle > input {
+  outline: none;
+  outline-width: 0;
+  border: none;
+  background-color: transparent;
+  width: 90px;
+}

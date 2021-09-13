@@ -1,0 +1,23 @@
+.app {
+  background-color: #f1f2f5;
+  height: 100%;
+  width: 100%;
+}
+
+.app__body {
+  display: flex;
+}
+
+.app__widgets {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 10%;
+  top: 40px;
+  position: sticky;
+  overflow: scroll;
+}
+
+.app__widgets::-webkit-scrollbar {
+  display: none;
+}

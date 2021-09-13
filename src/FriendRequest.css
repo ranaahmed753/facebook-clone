@@ -1,0 +1,68 @@
+.friendRequest {
+  display: flex;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.friendRequest:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.friendRequest__top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 15px;
+}
+
+.friendRequestTop__bottom {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.friendRequestTop__bottom > .addFriend {
+  border-width: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #1771e6;
+  color: white;
+  cursor: pointer;
+}
+
+.friendRequestTop__bottom > .addFriend:hover {
+  border-width: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #0856bd;
+  color: white;
+  cursor: pointer;
+}
+
+.friendRequestTop__bottom > .remove {
+  border-width: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 30px;
+  background-color: #d8dadf;
+  cursor: pointer;
+}
+
+.friendRequestTop__bottom > .remove:hover {
+  border-width: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 30px;
+  background-color: #c5ccdd;
+  cursor: pointer;
+}
