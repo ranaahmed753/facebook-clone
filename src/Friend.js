@@ -4,6 +4,26 @@ import SettingsRoundedIcon from '@material-ui/icons/SettingsRounded';
 import FriendRequest from './FriendRequest';
 
 const Friend = () => {
+    const friendRequest = [
+                        <FriendRequest/>,
+                         <FriendRequest/>,
+                         <FriendRequest/>,
+                         <FriendRequest/>,
+                         <FriendRequest/>,
+                         <FriendRequest/>,
+                         <FriendRequest/>,
+                         <FriendRequest/>,
+                         <FriendRequest/>,
+                         <FriendRequest/>,
+                         <FriendRequest/>,
+                         <FriendRequest/>,
+                         <FriendRequest/>,
+                         <FriendRequest/>,
+                         <FriendRequest/>,
+                         <FriendRequest/>,
+                         <FriendRequest/>,
+                         <FriendRequest/>,
+    ]
     return (
         <div className='friend'>
             <div className='friend__sidebar'>
@@ -23,24 +43,12 @@ const Friend = () => {
                      </div>
                      <div className='friendSidebarBottom__bottom'>
                          <h1 style={{fontSize:18,fontWeight:500}}>People You May Know</h1>
-                         <FriendRequest/>
-                         <FriendRequest/>
-                         <FriendRequest/>
-                         <FriendRequest/>
-                         <FriendRequest/>
-                         <FriendRequest/>
-                         <FriendRequest/>
-                         <FriendRequest/>
-                         <FriendRequest/>
-                         <FriendRequest/>
-                         <FriendRequest/>
-                         <FriendRequest/>
-                         <FriendRequest/>
-                         <FriendRequest/>
-                         <FriendRequest/>
-                         <FriendRequest/>
-                         <FriendRequest/>
-                         <FriendRequest/>
+                        {
+                            friendRequest.map( request => (
+                                request
+                            ))
+                        }
+                         
                      </div>
                 </div>
             </div>

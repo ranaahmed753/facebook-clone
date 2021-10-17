@@ -31,12 +31,12 @@ const Sidebar = () => {
             <div className='sidebar__bottom'>
                 <h1>Your Shortcuts</h1>
                 <div className='sidebarBottom__option'>
-                    <img src='https://miro.medium.com/max/1024/1*xDi2csEAWxu95IEkaNdFUQ.png'/>
+                    <img src='https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-128.png'/>
                     <h1>React Native</h1>
                 </div>
 
                 <div className='sidebarBottom__option'>
-                    <img src='https://miro.medium.com/max/3600/1*6ahbWjp_g9hqhaTDSJOL1Q.png'/>
+                    <img src='https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png'/>
                     <h1>Javascript</h1>
                 </div>
 
@@ -46,12 +46,12 @@ const Sidebar = () => {
                 </div>
 
                 <div className='sidebarBottom__option'>
-                    <img src='https://miro.medium.com/max/800/0*CPTNvq87xG-sUGdx.png'/>
+                    <img src='https://seeklogo.com/images/F/firebase-logo-402F407EE0-seeklogo.com.png'/>
                     <h1>Firebase</h1>
                 </div>
 
                 <div className='sidebarBottom__option'>
-                    <img src='https://miro.medium.com/max/3840/1*kb1UHFqeepYDE7VxNMBFQw.png'/>
+                    <img src='https://seeklogo.com/images/F/flutter-logo-5086DD11C5-seeklogo.com.png'/>
                     <h1>Flutter</h1>
                 </div>
                 

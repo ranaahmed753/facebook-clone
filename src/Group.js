@@ -66,7 +66,7 @@ const Group = () => {
             <div className='groupSidebarBottom__bottom'>
                  <h1>Groups You've Joined</h1>
               <div className='groupSidebarBottombottom__option'>
-                 <img alt='' src='https://miro.medium.com/max/1024/1*xDi2csEAWxu95IEkaNdFUQ.png'/>
+                 <img alt='' src='https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-128.png'/>
                  <div className='groupSidebarBottombottomOption__row'>
                    <h1 style={{fontSize:15,fontWeight:600}}>React Native</h1>
                    <h1 style={{fontSize:14,fontWeight:400}}>1 post for you</h1>
@@ -74,7 +74,7 @@ const Group = () => {
               </div>
 
               <div className='groupSidebarBottombottom__option'>
-                 <img alt='' src='https://miro.medium.com/max/3840/1*vHHBwcUFUaHWXntSnqKdCA.png'/>
+                 <img alt='' src='https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react-128.png'/>
                  <div className='groupSidebarBottombottomOption__row'>
                    <h1 style={{fontSize:15,fontWeight:600}}>ReactJs</h1>
                    <h1 style={{fontSize:14,fontWeight:400}}>1 post for you</h1>

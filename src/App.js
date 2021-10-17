@@ -101,7 +101,7 @@ const App = () => {
               }
 
             </div>
-               <Inbox open={open} onClose={()=> setOpen(false)} onOpen={()=> setOpen(true)}/>
+               <Inbox open={open} onClose={()=> setOpen(false)} onOpen={()=> setOpen(true)} name={person.name}/>
             </div>
           </Route>
 

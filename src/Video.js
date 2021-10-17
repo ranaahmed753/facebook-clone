@@ -11,6 +11,57 @@ import VideoSidebarBottomOption from './VideoSidebarBottomOption';
 import VideoRight from './VideoRight';
 
 const Video = () => {
+    const videoRight = [
+                <VideoRight/>,
+                <VideoRight/>,
+                <VideoRight/>,
+                <VideoRight/>,
+                <VideoRight/>,
+                <VideoRight/>,
+                <VideoRight/>,
+                <VideoRight/>,
+                <VideoRight/>,
+                <VideoRight/>,
+                <VideoRight/>,
+                <VideoRight/>,
+                <VideoRight/>,
+                <VideoRight/>,
+    ]
+    const videoSidebarBottomOption = [
+                        <VideoSidebarBottomOption/>,
+                        <VideoSidebarBottomOption/>,
+                        <VideoSidebarBottomOption/>,
+                        <VideoSidebarBottomOption/>,
+                        <VideoSidebarBottomOption/>,
+                        <VideoSidebarBottomOption/>,
+                        <VideoSidebarBottomOption/>,
+                        <VideoSidebarBottomOption/>,
+                        <VideoSidebarBottomOption/>,
+                        <VideoSidebarBottomOption/>,
+                        <VideoSidebarBottomOption/>,
+                        <VideoSidebarBottomOption/>,
+                        <VideoSidebarBottomOption/>,
+                        <VideoSidebarBottomOption/>,
+                        <VideoSidebarBottomOption/>
+    ]
+    const videoSidebarMiddleOption = [
+        {
+            name : 'Home',
+            icon : <OndemandVideoOutlinedIcon/>
+        },
+        {
+            name : 'Shows',
+            icon : <MovieCreationIcon/>
+        },
+        {
+            name : 'Live',
+            icon : <SwitchVideoOutlinedIcon/>
+        },
+        {
+            name : 'Saved Videos',
+            icon : <BookmarkIcon/>
+        },
+    ]
     return (
         <div className='video'>
             <div className='video__sidebar'>
@@ -29,23 +80,15 @@ const Video = () => {
                     </div>
                 </div>
                 <div className='videoSidebar__middle'>
+                    {
+                        videoSidebarMiddleOption.map( videoSidebarMiddleOptions => (
+                            <div className='videoSidebarMiddle__option'>
+                                {videoSidebarMiddleOptions.icon}
+                                <h1>{videoSidebarMiddleOptions.name}</h1>
+                            </div>
+                        ))
+                    }
                     
-                    <div className='videoSidebarMiddle__option'>
-                        <OndemandVideoOutlinedIcon/>
-                        <h1>Home</h1>
-                    </div>
-                    <div className='videoSidebarMiddle__option'>
-                        <MovieCreationIcon/>
-                        <h1>Shows</h1>
-                    </div>
-                    <div className='videoSidebarMiddle__option'>
-                        <SwitchVideoOutlinedIcon/>
-                        <h1>Live</h1>
-                    </div>
-                    <div className='videoSidebarMiddle__option'>
-                        <BookmarkIcon/>
-                        <h1>Saved Videos</h1>
-                    </div>
                 </div>
                 <div className='videoSidebar__bottom'>
                     
@@ -54,39 +97,22 @@ const Video = () => {
                         <h1 className='manage' style={{fontSize:13,fontWeight:400,cursor:'pointer',color:'#3D87E8'}}>Manage</h1>
                     </div>
                     <div className='videoSidebarBottom__option'>
-                        <VideoSidebarBottomOption/>
-                        <VideoSidebarBottomOption/>
-                        <VideoSidebarBottomOption/>
-                        <VideoSidebarBottomOption/>
-                        <VideoSidebarBottomOption/>
-                        <VideoSidebarBottomOption/>
-                        <VideoSidebarBottomOption/>
-                        <VideoSidebarBottomOption/>
-                        <VideoSidebarBottomOption/>
-                        <VideoSidebarBottomOption/>
-                        <VideoSidebarBottomOption/>
-                        <VideoSidebarBottomOption/>
-                        <VideoSidebarBottomOption/>
-                        <VideoSidebarBottomOption/>
-                        <VideoSidebarBottomOption/>
+                        {
+                            videoSidebarBottomOption.map( videoSidebarBottomOptions => (
+                                videoSidebarBottomOptions
+                            ))
+                        }
+                        
                     </div>
                 </div>
             </div>
             <div className='video__right'>
-                <VideoRight/>
-                <VideoRight/>
-                <VideoRight/>
-                <VideoRight/>
-                <VideoRight/>
-                <VideoRight/>
-                <VideoRight/>
-                <VideoRight/>
-                <VideoRight/>
-                <VideoRight/>
-                <VideoRight/>
-                <VideoRight/>
-                <VideoRight/>
-                <VideoRight/>
+                {
+                    videoRight.map( videoRights => (
+                        videoRights
+                    ))
+                }
+                
             </div>
         </div>
     );

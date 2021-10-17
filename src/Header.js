@@ -22,6 +22,29 @@ import {
 
 const Header = () => {
     const [open,setOpen] = useState(false);
+    const route = [
+        {
+            routeTo : '/',
+            routeIcon : <HomeOutlinedIcon style={{fontSize:35}}/>
+        },
+        {
+            routeTo : '/video',
+            routeIcon : <OndemandVideoOutlinedIcon style={{fontSize:35}}/>
+        },
+        {
+            routeTo : '/friend',
+            routeIcon : <PeopleAltRoundedIcon style={{fontSize:35}}/>
+        },
+        {
+            routeTo : '/marketplace',
+            routeIcon : <StorefrontOutlinedIcon style={{fontSize:35}}/>
+        },
+        {
+            routeTo : '/group',
+            routeIcon : <SupervisedUserCircleOutlinedIcon style={{fontSize:35}}/>
+        },
+       
+    ]
     return (
         <div className='header'>
           <div className='header__left'>
@@ -32,33 +55,17 @@ const Header = () => {
              </div>
           </div>
           <div className='header__center'>
-              <div className='header__option'>
-                  <NavLink exact activeClassName='active' activeStyle={{color:'#2e81f4'}} style={{color:'gray'}} to='/'>
-                  <HomeOutlinedIcon style={{fontSize:35}}/>
-                  </NavLink>   
-              </div>
-              
-              <div className='header__option'>
-                  <NavLink exact activeClassName='active' activeStyle={{color:'#2e81f4'}} style={{color:'gray'}} to='/video'>
-                  <OndemandVideoOutlinedIcon style={{fontSize:35}}/>
-                  </NavLink>  
-              </div>
-              <div className='header__option'>
-                  <NavLink exact activeClassName='active' activeStyle={{color:'#2e81f4'}} style={{color:'gray'}} to='/friend'>
-                  <PeopleAltRoundedIcon style={{fontSize:35}}/>
-                  </NavLink> 
-              </div>
-              
-              <div className='header__option'>
-                  <NavLink exact activeClassName='active' activeStyle={{color:'#2e81f4'}} style={{color:'gray'}} to='/marketplace'>
-                  <StorefrontOutlinedIcon style={{fontSize:35}}/>
-                  </NavLink>   
-              </div>
-              <div className='header__option'>
-                  <NavLink exact activeClassName='active' activeStyle={{color:'#2e81f4'}} style={{color:'gray'}} to='/group'>
-                  <SupervisedUserCircleOutlinedIcon style={{fontSize:35}}/>
-                  </NavLink>   
-              </div>
+
+              {
+                  route.map( routes => (
+                    <div className='header__option'>
+                        <NavLink exact activeClassName='active' activeStyle={{color:'#2e81f4'}} style={{color:'gray'}} to={routes.routeTo}>
+                        {routes.routeIcon}
+                        </NavLink>   
+                    </div>
+                  ))
+              }
+             
               
           </div>
           <div className='header__right'>
@@ -79,7 +86,11 @@ const Header = () => {
                   <ExpandMoreIcon/>
               </IconButton>
           </div>
-          <Popup open={open} onClose={()=> setOpen(false)} onOpen={()=> setOpen(true)}/> 
+          <Popup 
+          open={open} 
+          onClose={()=> setOpen(false)} 
+          onOpen={()=> setOpen(true)}
+          /> 
         </div>
     );
 };

@@ -21,6 +21,70 @@ import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
 import MarketplaceFeed from './MarketplaceFeed';
 
 const Marketplace = () => {
+    const catagory = [
+        {
+            catagoryName : 'Vehicles',
+            catagoryIcon : <DriveEtaOutlinedIcon/>
+        },
+        {
+            catagoryName : 'Family',
+            catagoryIcon : <FavoriteOutlinedIcon/>
+        },
+        {
+            catagoryName : 'Electronics',
+            catagoryIcon : <SmartphoneIcon/>
+        },
+        {
+            catagoryName : 'Home Goods',
+            catagoryIcon : <HomeWorkRoundedIcon/>
+        },
+        {
+            catagoryName : 'Sporting Goods',
+            catagoryIcon : <SportsBasketballIcon/>
+        },
+        {
+            catagoryName : 'Toy & Games',
+            catagoryIcon : <SportsEsportsIcon/>
+        },
+        {
+            catagoryName : 'Office Supplies',
+            catagoryIcon : <LocalOfferIcon/>
+        },
+        {
+            catagoryName : 'Groups',
+            catagoryIcon : <GroupOutlinedIcon/>
+        },
+        {
+            catagoryName : 'Pet Supplies',
+            catagoryIcon : <CloudIcon/>
+        },
+        {
+            catagoryName : 'Home Supplies',
+            catagoryIcon : <HomeRoundedIcon/>
+        },
+    ]
+    const marketplace = [
+        {
+            marketplaceName : 'Browse All',
+            marketplaceIcon : <StorefrontOutlinedIcon/>
+        },
+        {
+            marketplaceName : 'Notifications',
+            marketplaceIcon : <NotificationsRoundedIcon/>
+        },
+        {
+            marketplaceName : 'Inbox',
+            marketplaceIcon : <MoveToInboxOutlinedIcon/>
+        },
+        {
+            marketplaceName : 'Cart',
+            marketplaceIcon : <ShoppingCartIcon/>
+        },
+        {
+            marketplaceName : 'Your Account',
+            marketplaceIcon : <PersonIcon/>
+        },
+    ]
     return (
         <div className='marketplace'>
            
@@ -40,26 +104,15 @@ const Marketplace = () => {
            </div>
 
            <div className='marketplaceSidebar__bottom'>
-             <div className='marketplaceSidebarBottom__option'>
-                 <StorefrontOutlinedIcon/>
-                 <h1>Browse All</h1>
-             </div>
-             <div className='marketplaceSidebarBottom__option'>
-                 <NotificationsRoundedIcon/>
-                 <h1>Notifications</h1>
-             </div>
-             <div className='marketplaceSidebarBottom__option'>
-                 <MoveToInboxOutlinedIcon/>
-                 <h1>Inbox</h1>
-             </div>
-             <div className='marketplaceSidebarBottom__option'>
-                 <ShoppingCartIcon/>
-                 <h1>Cart</h1>
-             </div>
-             <div className='marketplaceSidebarBottom__option'>
-                 <PersonIcon/>
-                 <h1>Your Account</h1>
-             </div>
+               {
+                   marketplace.map( marketplaces => (
+                        <div className='marketplaceSidebarBottom__option'>
+                            {marketplaces.marketplaceIcon}
+                            <h1>{marketplaces.marketplaceName}</h1>
+                        </div>
+                   ))
+               }
+             
              <button>+ Create New Listing</button>
            </div>
 
@@ -70,46 +123,15 @@ const Marketplace = () => {
 
              <div className='marketplaceSidebarBottom__bottom'>
                  <h1>Categories</h1>
-                 <div className='marketplaceSidebarBottombottom__option'>
-                     <DriveEtaOutlinedIcon/>
-                     <h1>Vehicles</h1>
-                 </div>
-                 <div className='marketplaceSidebarBottombottom__option'>
-                     <FavoriteOutlinedIcon/>
-                     <h1>Family</h1>
-                 </div>
-                 <div className='marketplaceSidebarBottombottom__option'>
-                     <SmartphoneIcon/>
-                     <h1>Electronics</h1>
-                 </div>
-                 <div className='marketplaceSidebarBottombottom__option'>
-                     <HomeWorkRoundedIcon/>
-                     <h1>Home Goods</h1>
-                 </div>
-                 <div className='marketplaceSidebarBottombottom__option'>
-                     <SportsBasketballIcon/>
-                     <h1>Sporting Goods</h1>
-                 </div>
-                 <div className='marketplaceSidebarBottombottom__option'>
-                     <SportsEsportsIcon/>
-                     <h1>Toy & Games</h1>
-                 </div>
-                 <div className='marketplaceSidebarBottombottom__option'>
-                     <LocalOfferIcon/>
-                     <h1>Office Supplies</h1>
-                 </div>
-                 <div className='marketplaceSidebarBottombottom__option'>
-                     <GroupOutlinedIcon/>
-                     <h1>Groups</h1>
-                 </div>
-                 <div className='marketplaceSidebarBottombottom__option'>
-                     <CloudIcon/>
-                     <h1>Pet Supplies</h1>
-                 </div>
-                 <div className='marketplaceSidebarBottombottom__option'>
-                     <HomeRoundedIcon/>
-                     <h1>Home Supplies</h1>
-                 </div>
+                 {
+                     catagory.map( catagories => (
+                        <div className='marketplaceSidebarBottombottom__option'>
+                            {catagories.catagoryIcon}
+                            <h1>{catagories.catagoryName}</h1>
+                        </div>
+                     ))
+                 }
+                 
 
              </div>
 
